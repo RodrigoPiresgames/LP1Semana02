@@ -9,7 +9,8 @@ namespace ManipulaVar
             foreach (string arg in args)
             {
                 int x = int.Parse(arg);
-                Console.WriteLine($"{x++ - x}");
+                Console.WriteLine($"{x++ + x}");
+                Console.WriteLine($"{--x + x}");
             }
         }
     }
