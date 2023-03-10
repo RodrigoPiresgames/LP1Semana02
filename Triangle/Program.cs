@@ -13,25 +13,17 @@ namespace Triangle
                 int intArg;
                 bool isInt = int.TryParse(arg, out intArg);
                 if (isInt)
-                {
                     num = Convert.ToInt32(arg);
-                    Console.WriteLine(num);
-                }
                 else
-                {
                     str = arg;
-                    Console.WriteLine(str);
-                }
             }
 
-            for(int i = 0; i = num; i++)
+            for(int i = 0; i < num; i++)
             {
                 for (int j = 0; j <= i; j++)
                     Console.Write(str);
                 Console.WriteLine();
             }
-
-
         }
     }
 }
