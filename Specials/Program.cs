@@ -28,9 +28,9 @@ namespace Specials
             Console.WriteLine(2 * double.MaxValue);
             Console.WriteLine(double.MaxValue + 1);
 
-
-            Console.WriteLine(2 * double.MaxValue);
-            Console.WriteLine(double.MaxValue + 1);
+            float f1, f2;
+            f1 = f2 = 10.01f;
+            Console.WriteLine(f1 == f2 + 0.00000000000001f);
 
         }
     }
