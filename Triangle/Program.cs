@@ -6,21 +6,32 @@ namespace Triangle
     {
         static void Main(string[] args)
         {
-            foreach(string arg in args)
+            string str = "";
+            int num = 0;
+            foreach (string arg in args)
             {
                 int intArg;
                 bool isInt = int.TryParse(arg, out intArg);
                 if (isInt)
                 {
-                    int num = Convert.ToInt32(arg);
+                    num = Convert.ToInt32(arg);
                     Console.WriteLine(num);
                 }
                 else
                 {
-                    string str = arg;
+                    str = arg;
                     Console.WriteLine(str);
                 }
             }
+
+            for(int i = 0; i = num; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                    Console.Write(str);
+                Console.WriteLine();
+            }
+
+
         }
     }
 }
