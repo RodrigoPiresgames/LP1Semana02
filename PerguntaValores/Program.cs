@@ -13,9 +13,8 @@ namespace PerguntaValores
             str = Console.ReadLine();
             float r = float.Parse(str);
 
-            double pi = 3.1415926;
-            Console.WriteLine($"{ pi * (r * r) * a}");
-            Console.WriteLine($"{ (2 * pi * r) * (r + a)}");
+            Console.WriteLine($"{ Math.PI * Math.Pow(r, 2) * a}");
+            Console.WriteLine($"{ (2 * Math.PI * r) * (r + a)}");
 
         }
     }
