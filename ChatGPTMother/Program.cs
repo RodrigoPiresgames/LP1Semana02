@@ -26,6 +26,12 @@ namespace ChatGPTMother
                     case "Are the second turn exercises harder?":
                         response = "I can't legally answer that question under penalty of game over";
                         break;
+                    case "Am I funny?":
+                        response = "Not really...";
+                        break;
+                    case "Are u alive?":
+                        response = "Let me think about that...";
+                        break;
                     case "EXIST":
                         response = null;
                         break;
@@ -35,7 +41,8 @@ namespace ChatGPTMother
                 }
                 if (response is null)
                     break;
-                Console.WriteLine(response);
+                else
+                    Console.WriteLine(response);
             }
         }
     }
