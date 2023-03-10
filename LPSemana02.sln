@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerguntaValores", "Pergunta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specials", "Specials\Specials.csproj", "{47396C5B-C1BB-4496-88C8-3E99BDCE28DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GranpaPatternSwitch", "GranpaPatternSwitch\GranpaPatternSwitch.csproj", "{DFB7DC85-BC2A-4069-BA8E-D3F5B1BF2A41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTGrandfather", "ChatGPTGrandfather\ChatGPTGrandfather.csproj", "{36AFF034-6B5D-42D8-B6C8-796B0DCC989B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{47396C5B-C1BB-4496-88C8-3E99BDCE28DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47396C5B-C1BB-4496-88C8-3E99BDCE28DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47396C5B-C1BB-4496-88C8-3E99BDCE28DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB7DC85-BC2A-4069-BA8E-D3F5B1BF2A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB7DC85-BC2A-4069-BA8E-D3F5B1BF2A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB7DC85-BC2A-4069-BA8E-D3F5B1BF2A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB7DC85-BC2A-4069-BA8E-D3F5B1BF2A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AFF034-6B5D-42D8-B6C8-796B0DCC989B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AFF034-6B5D-42D8-B6C8-796B0DCC989B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AFF034-6B5D-42D8-B6C8-796B0DCC989B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AFF034-6B5D-42D8-B6C8-796B0DCC989B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
