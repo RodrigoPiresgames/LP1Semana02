@@ -6,7 +6,11 @@ namespace Triangle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            foreach(string arg in args)
+            {
+                int num = int.Parse(arg);
+                Console.WriteLine(num);
+            }
         }
     }
 }
