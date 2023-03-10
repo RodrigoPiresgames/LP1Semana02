@@ -8,8 +8,18 @@ namespace Triangle
         {
             foreach(string arg in args)
             {
-                int num = int.Parse(arg);
-                Console.WriteLine(num);
+                int intArg;
+                bool isInt = int.TryParse(arg, out intArg);
+                if (isInt)
+                {
+                    int num = Convert.ToInt32(arg);
+                    Console.WriteLine(num);
+                }
+                else
+                {
+                    string str = arg;
+                    Console.WriteLine(str);
+                }
             }
         }
     }
