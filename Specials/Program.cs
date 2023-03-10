@@ -18,6 +18,9 @@ namespace Specials
             Console.WriteLine($"{double.MaxValue} {double.MinValue}");
             Console.WriteLine($"{decimal.MaxValue} {decimal.MinValue}");
             Console.WriteLine($"{char.MaxValue} {char.MinValue}");
+
+            Console.WriteLine($"{double.PositiveInfinity} {double.NegativeInfinity}");
+            Console.WriteLine($"{float.NaN}");
         }
     }
 }
