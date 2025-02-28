@@ -8,11 +8,6 @@ namespace PerfectCountDown
         private static void Main(string[] args)
         {
             WriteErrorMessage(AskForNums());
-            Console.Write($"Start number: ");
-            int start = int.Parse(Console.ReadLine());
-            Console.Write($"Step number: ");
-            int step = int.Parse(Console.ReadLine());
-
         }
 
         private static (int, int) AskForNums()
@@ -31,15 +26,18 @@ namespace PerfectCountDown
             {
                 case 0:
                     Console.WriteLine($"Out-of-range start or step. Try again.");
+                    AskForNums();
                     break;
                 case 1:
                     Console.WriteLine($"Start must be higher than step. Try again.");
+                    AskForNums();
                     break;
                 case 2:
                     Console.WriteLine($"Start not divisible by step. Try again.");
+                    AskForNums();
                     break;
                 case 3:
-
+                    DoCountDown(nums);
                     break;
 
             }
@@ -54,6 +52,18 @@ namespace PerfectCountDown
                 return 3;
             else
                 return 0;
+        }
+
+        private static void DoCountDown((int,int) to_divide)
+        {
+            int counting = to_divide.Item1;
+            Console.WriteLine($"{counting}");
+
+            while(counting >= 0)
+            {
+                Console.WriteLine($"{to_divide.Item1 / to_divide.Item2}");
+                counting = counting - to_divide.Item1 / to_divide.Item2;
+            }
         }
     }
 }
