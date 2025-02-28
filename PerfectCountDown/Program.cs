@@ -7,38 +7,50 @@ namespace PerfectCountDown
     {
         private static void Main(string[] args)
         {
-
+            WriteErrorMessage(AskForNums());
             Console.Write($"Start number: ");
             int start = int.Parse(Console.ReadLine());
             Console.Write($"Step number: ");
             int step = int.Parse(Console.ReadLine());
 
-            switch(CheckIfLegal(start,step))
+        }
+
+        private static (int, int) AskForNums()
+        {
+            Console.Write($"Start number: ");
+            int start = int.Parse(Console.ReadLine());
+            Console.Write($"Step number: ");
+            int step = int.Parse(Console.ReadLine());
+            
+            return (start, step);
+        }
+
+        private static void WriteErrorMessage((int, int) nums)
+        {
+            switch(CheckIfLegal(nums))
             {
                 case 0:
-                    Console.WriteLine($"Step number: ");
+                    Console.WriteLine($"Out-of-range start or step. Try again.");
                     break;
                 case 1:
-
+                    Console.WriteLine($"Start must be higher than step. Try again.");
                     break;
                 case 2:
-
+                    Console.WriteLine($"Start not divisible by step. Try again.");
                     break;
                 case 3:
 
                     break;
 
             }
-
         }
-
-        private static int CheckIfLegal(int x, int y)
+        private static int CheckIfLegal((int, int) to_verify)
         {
-            if(x <= 1 || y <= 1 )
+            if(to_verify.Item1 <= 1 || to_verify.Item2 <= 1 )
                 return 1;
-            else if(y >= x)
+            else if(to_verify.Item2 >= to_verify.Item1)
                 return 2;
-            else if(x % y != 0)
+            else if(to_verify.Item1 % to_verify.Item2 != 0)
                 return 3;
             else
                 return 0;
