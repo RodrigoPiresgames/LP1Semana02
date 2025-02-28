@@ -46,7 +46,7 @@ namespace PerfectCountDown
         {
             if(to_verify.Item1 <= 1 || to_verify.Item2 <= 1 )
                 return 0;
-            else if(to_verify.Item2 >= to_verify.Item1)
+            else if(to_verify.Item1 >= to_verify.Item2)
                 return 1;
             else if(to_verify.Item1 % to_verify.Item2 != 0)
                 return 2;
