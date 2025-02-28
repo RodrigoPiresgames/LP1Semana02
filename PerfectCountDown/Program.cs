@@ -45,13 +45,13 @@ namespace PerfectCountDown
         private static int CheckIfLegal((int, int) to_verify)
         {
             if(to_verify.Item1 <= 1 || to_verify.Item2 <= 1 )
-                return 1;
-            else if(to_verify.Item2 >= to_verify.Item1)
-                return 2;
-            else if(to_verify.Item1 % to_verify.Item2 != 0)
-                return 3;
-            else
                 return 0;
+            else if(to_verify.Item2 >= to_verify.Item1)
+                return 1;
+            else if(to_verify.Item1 % to_verify.Item2 != 0)
+                return 2;
+            else
+                return 3;
         }
 
         private static void DoCountDown((int,int) to_divide)
