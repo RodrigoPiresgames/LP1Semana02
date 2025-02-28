@@ -21,6 +21,12 @@ namespace ValoresEspeciais
 
             Console.WriteLine($"{double.PositiveInfinity} {double.NegativeInfinity}");
             Console.WriteLine($"{float.NaN}");
+
+            int x = byte.MaxValue;
+            Console.WriteLine((byte)(x + 1));
+
+            Console.WriteLine(2 * double.MaxValue);
+            Console.WriteLine(double.MaxValue + 1);
         }
     }
 }
