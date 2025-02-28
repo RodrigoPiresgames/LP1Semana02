@@ -26,15 +26,15 @@ namespace PerfectCountDown
             {
                 case 0:
                     Console.WriteLine($"Out-of-range start or step. Try again.");
-                    AskForNums();
+                    WriteErrorMessage(AskForNums());
                     break;
                 case 1:
                     Console.WriteLine($"Start must be higher than step. Try again.");
-                    AskForNums();
+                    WriteErrorMessage(AskForNums());
                     break;
                 case 2:
                     Console.WriteLine($"Start not divisible by step. Try again.");
-                    AskForNums();
+                    WriteErrorMessage(AskForNums());
                     break;
                 case 3:
                     DoCountDown(nums);
